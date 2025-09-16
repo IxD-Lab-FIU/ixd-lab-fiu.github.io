@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IXD Lab – Interactive Experience Design Lab @Florida International University</title>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Interactive Experience Design Lab @Florida International University">
+    <meta property="og:description" content="Interactive Experience Design Lab @Florida International University"/>
+
+    <meta name="author" content="IXD Lab" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="Smash Lab - Smart Sensing for Humans Lab at Carnegie Mellon University" href="/feed.xml" />
+
+    <script>
+
+        $(document).ready(function(){
+
+          $('.bxslider').bxSlider({
+            adaptiveHeight: false,
+            speed: 500,
+            captions: true,
+            auto: true,
+            pause: 5000,
+            autoControls: true
+            });
+        });
+
+      function fixNavbar() {
+        if ($(this).scrollTop() > 87 && $(window).width() >= 768) {
+          $("body").addClass("fix-nav");
+          $(".navbar").addClass("navbar-fixed-top");
+          $(".navbar").removeClass("navbar-static-top");
+          $("#logo").attr("src","/images/logos/lab-logo-small.png");
+
+        } else {
+          $("body").removeClass("fix-nav");
+          $(".navbar").addClass("navbar-static-top");
+          $(".navbar").removeClass("navbar-fixed-top");
+          $("#logo").attr("src","/images/logos/lab-logo.png");
+        }
+      }
+      $(window).on('resize orientationChange', function(event) {
+        fixNavbar();
+      });
+      $(window).scroll(function(e){
+        fixNavbar()
+      });
+    </script>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img id="logo" src="/images/logos/lab-logo.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../">HOME</a></li>
+              <li><a href="/members">TEAM</a></li>
+              <li><a href="/publications">PUBLICATIONS</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <div id="main" role="main" class="container">
+          <article class="page">
+
+          <h1></h1>
+
+              <div class="row">
+                  <div class="col-sm-12">
+                      <h3>We publish across Computer Science, Design, Human-computer Interaction, and domain-specific venues such as healthcare-related journals.</h3>
+
+                      <h3>
+                        Primary mean of publication for computing research, are conference proceedings. 
+                        
+                        Many conferences organized by ACM (e.g., CHI, UbiComp, UIST, CSCW, IUI, ASSETS, etc.) and IEEE (e.g., ISMAR, IEEE VR etc.) are considered top publication venues for human-computer interaction. 
+                        
+                        Sometimes, we also published at journals such as TOCHI and IMWUT.
+                      </h3>
+
+                      <h3>Please refer to the <a href="https://scholar.google.com/citations?user=z--wnsUAAAAJ" target="_blank">PI's Google Scholar page</a> for a complete list of authored publications.</h3>
+
+                  </div>
+
+              </div>
+
+              <h2 id="2025-ref" style="padding-top: 15px">2025</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/DeSouza-CUI-25/thumbnail.png"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3719160.3736620" target="_blank"> <h2>Understanding the Challenges and Design Opportunities of Using Voice Assistants to Support Postpartum Mothers in Brazil</h2></a>
+                      <p>
+                          <span class="authors">Jessica de Souza, Chen Chen, Tanya Punater, Ariana Talai, Bárbara Tideman Sartorio Camargo, Ana Carolina Lavio Rocha, Kelly Pereira Coca, Edward Jay Wang</span>
+                          <br/>
+                          <i>In the Proceedings of the 7th ACM Conference on Conversational User Interfaces (CUI 2025)</i>
+                          <br/>
+                          <a href="https://doi.org/10.1145/3719160.3736620" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>          
+
+
+              <h2 id="2025-ref" style="padding-top: 15px">2024</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-TOCHI-24-MemoVis/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="http://dx.doi.org/10.1145/3694681" target="_blank"> <h2>MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Cuong Nguyen, Thibault Groueix, Vladimir G. Kim, Nadir Weibel</span>
+                          <br/>
+                          <i>In the ACM Journal of Transactions on Computer-Human Interaction (TOCHI 2024)</i>
+                          <br/>
+
+                          <a href="http://dx.doi.org/10.1145/3694681" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Yarmand-DIS-24-iContour/thumbnail.jpeg"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3643834.3660718" target="_blank"> <h2>Enhancing Accuracy, Time Spent, and Ubiquity in Critical Healthcare Delineation via Cross-Device Contouring</h2></a>
+
+                      <p>
+                          <span class="authors">Matin Yarmand, Chen Chen, Michael V. Sherer, Yash N. Shah, Peter Liu, Borui Wang, Larry Hernandez, James D. Murphy, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of the 2024 ACM International Conference on Designing Interactive Systems (DIS '24)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3643834.3660718" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Yarmand-CHI-24-iContour/thumbnail.jpeg"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3613904.3642453" target="_blank"> <h2>“I’d be watching him contour till 10 o’clock at night”: Understanding Tensions between Teaching Methods and Learning Needs in Healthcare Apprenticeship</h2></a>
+
+                      <p>
+                          <span class="authors">Matin Yarmand, Chen Chen, Kexin Cheng, James D. Murphy, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3613904.3642453" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+              <h2 id="2025-ref" style="padding-top: 15px">2023</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-UIST-23-PaperToPlace/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3586183.3606832" target="_blank"> <h2>PaperToPlace: Transforming Instruction Documents into Spatialized and Context-Aware Mixed Reality Experiences</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Cuong Nguyen, Jane Hoffswell, Jennifer Healey, Trung Bui, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '23)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3586183.3606832" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Siyou-ASSETS-23-EmbodiedExploration/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3597638.3608410" target="_blank"> <h2>Embodied Exploration: Facilitating Remote Accessibility Assessment for Wheelchair Users with Virtual Reality</h2></a>
+
+                      <p>
+                          <span class="authors">Siyou Pei, Alexander Chen, Chen Chen, Mingzhe "Franklin" Li, Megan Fozzard, Hao-Yun Chi, Nadir Weibel, Patrick Carrington, Yang Zhang</span>
+                          <br/>
+                          <i>In the Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3597638.3608410" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-ASSETS-23-VOLI/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3597638.3608378" target="_blank"> <h2>Screen or No Screen? Lessons Learnt from a Real-World Deployment Study of Using Voice Assistants With and Without Touchscreen for Older Adults</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Ella T. Lifset, Yichen Han, Arkajyoti Roy, Michael Hogarth, Alison A. Moore, Emilia Farcas, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '23)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3597638.3608378" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Boovaraghavan-IMWUT-23-Mites/thumbnail.jpg"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3580865" target="_blank"> <h2>Mites: Design and Deployment of a General-Purpose Sensing Infrastructure for Buildings</h2></a>
+
+                      <p>
+                          <span class="authors">Sudershan Boovaraghavan, Chen Chen, Anurag Maravi, Mike Czapik, Yang Zhang, Chris Harrison, Yuvraj Agarwal</span>
+                          <br/>
+                          <i>In the Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/UbiComp '23)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3580865" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+              <h2 id="2025-ref" style="padding-top: 15px">2022</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-ISMAR-23-VRContour/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1109/ISMAR55827.2022.00020" target="_blank"> <h2>VRContour: Bringing Contour Delineations of Medical Structures Into Virtual Reality</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Matin Yarmand, Varun Singh, Michael V. Sherer, James D. Murphy, Yang Zhang, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of 2022 IEEE International Symposium on Mixed and Augmented Reality (ISMAR '22)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1109/ISMAR55827.2022.00020" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-ISMAR-23-VRDrawing/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1109/ISMAR55827.2022.00054" target="_blank"> <h2>Investigating Input Modality and Task Geometry on Precision-first 3D Drawing in Virtual Reality</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Matin Yarmand, Zhuoqun Xu, Varun Singh, Yang Zhang, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of 2022 IEEE International Symposium on Mixed and Augmented Reality (ISMAR '22)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1109/ISMAR55827.2022.00054" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+
+              <h2 id="2025-ref" style="padding-top: 15px">2021</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-ASSETS-21-VOLI/thumbnails.jpg"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3441852.3471218" target="_blank"> <h2>Understanding Barriers and Design Opportunities to Improve Healthcare and QOL for Older Adults through Voice Assistants</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Janet G Johnson, Kemeberly Charles, Alice Lee, Ella T Lifset, Michael Hogarth, Alison A Moore, Emilia Farcas, Nadir Weibel</span>
+                          <br/>
+                          <i>In the Proceedings of the 2021 ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '21),</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3441852.3471218" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Chen-IPSN-21-EXGSense/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3412382.3458268" target="_blank"> <h2>ExGsense: Toward facial gesture sensing with a sparse near-eye sensor array</h2></a>
+
+                      <p>
+                          <span class="authors">Chen Chen, Ke Sun, Xinyu Zhang</span>
+                          <br/>
+                          <i>In the Proceedings of the 2021 ACM International Conference on Information Processing in Sensor Networks (IPSN '21)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3412382.3458268" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+              <h2 id="2025-ref" style="padding-top: 15px">2020</h2>
+
+              <hr/>
+
+              <div class="row publication-badge">
+                  <div class="publication-pic col-md-2 col-sm-3 col-xs-12 text-left">
+                      <img src="https://chen-chen.me/assets/research/Ke-SenSys-20-MicShield/thumbnail.gif"/>&nbsp;
+                  </div>
+              
+                  <div class="publication-info col-md-10 col-sm-9 col-xs-12">
+                
+                      <a href="https://doi.org/10.1145/3384419.3430727" target="_blank"> <h2>"Alexa, stop spying on me!" Speech Privacy Protection Against Voice Assistants</h2></a>
+
+                      <p>
+                          <span class="authors">Ke Sun, Chen Chen, Xinyu Zhang</span>
+                          <br/>
+                          <i>In the Proceedings of the 2020 ACM International Conference on Embedded Networked Sensor Systems (SenSys '20)</i>
+                          <br/>
+
+                          <a href="https://doi.org/10.1145/3384419.3430727" target="_blank" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> DOI
+                          </a>
+                      </p>
+                  </div>
+              </div>
+
+      </article>
+
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper-footer container">
+      <footer class="footer">
+        <div class="row">
+          <div class="col-xs-4 text-left"><a href="http://fiu.edu" target="_blank"><img src="/images/logos/fiu-logo.png"/></a></div>
+          <div class="col-xs-4 text-center"><a href="https://cec.fiu.edu" target="_blank"><img src="/images/logos/fiu-eng-logo.png"/></a></div>
+          <div class="col-xs-4 text-right"><a href="http://cis.fiu.edu" target="_blank"><img src="/images/logos/fiu-kfscis-logo.png"/></a></div>
+        </div>
+
+        <div class="row">
+              <p style="text-align: center;padding-top: 20px">Updated on September 16, 2025</p>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>

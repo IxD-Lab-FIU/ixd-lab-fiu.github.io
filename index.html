@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IXD Lab – Interactive Experience Design Lab @Florida International University</title>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Interactive Experience Design Lab @Florida International University">
+    <meta property="og:description" content="Interactive Experience Design Lab @Florida International University"/>
+    
+    <meta name="author" content="IXD Lab" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="Smash Lab - Smart Sensing for Humans Lab at Carnegie Mellon University" href="/feed.xml" />
+
+    <script>
+
+        $(document).ready(function(){
+
+          $('.bxslider').bxSlider({
+            adaptiveHeight: false,
+            speed: 500,
+            captions: true,
+            auto: true,
+            pause: 5000,
+            autoControls: true
+            });
+        });
+
+      function fixNavbar() {
+        if ($(this).scrollTop() > 87 && $(window).width() >= 768) {
+          $("body").addClass("fix-nav");
+          $(".navbar").addClass("navbar-fixed-top");
+          $(".navbar").removeClass("navbar-static-top");
+          $("#logo").attr("src","/images/logos/lab-logo-small.png");
+
+        } else {
+          $("body").removeClass("fix-nav");
+          $(".navbar").addClass("navbar-static-top");
+          $(".navbar").removeClass("navbar-fixed-top");
+          $("#logo").attr("src","/images/logos/lab-logo.png");
+        }
+      }
+      $(window).on('resize orientationChange', function(event) {
+        fixNavbar();
+      });
+      $(window).scroll(function(e){
+        fixNavbar()
+      });
+    </script>
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img id="logo" src="/images/logos/lab-logo.png"></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/members">TEAM</a></li>
+            <li><a href="/publications">PUBLICATIONS</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div id="main" role="main" class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 align="justify">
+                Rooted in a user-centered design approach, the Interactive Experience Design (IXD) Lab @FIU seeks to understand how XR and AI can seamlessly extend our thoughts, behaviors, and activities by augmenting today's information interaction experiences.
+
+                As an interdisciplinary team, we tackle challenging research problems in Human-Computer Interaction (HCI), eXtended Reality (XR), Creativity Support Tools (CST) and Accessibility (A11y).
+
+                We build and evaluate deployable solutions and test their utility in the real world.
+            </h3>
+
+            <h3>
+    	        We are always looking to work with great students. If you are interested in contributing to research in our lab, fill this <a href="https://forms.office.com/r/BvYqByBVag" target="_blank"> form</a> out.
+            </h3>
+
+            <h3>
+                If you are a prospective Ph.D. student, please refer to <a href="https://chen-chen.me/phd.html" target="_blank">this link</a>.
+            </h3>
+        </div>
+    </div>
+
+    <h1>RECENT ONGOING PROJECT</h1>
+
+
+    <div class="row">
+      <div class="col-sm-12"><h3>Stay Tuned!</h3></div>
+      
+
+        <!-- PrISM-Q&A -->
+<!--        <div class="project-badge col-md-4 col-sm-4 col-xs-4">-->
+<!--            <div class="image">-->
+<!--                <img src="/images/pubs/PrismQA.png"/>-->
+<!--                <div class="overlay">-->
+<!--                    <a href="/publications/prism_qa/">-->
+<!--                        <div class="pitch">-->
+<!--                            Step-Aware Question Answering using LLMs Enabled by Multimodal Action and Procedure Tracking using a Smartwatch}-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="details">-->
+<!--                <div class="name">PrISM-Q&A</div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper-footer container">
+      <footer class="footer">
+          <div class="row">
+              <div class="col-xs-4 text-left"><a href="https://fiu.edu" target="_blank"><img src="/images/logos/fiu-logo.png"/></a></div>
+              <div class="col-xs-4 text-center"><a href="https://cec.fiu.edu" target="_blank"><img src="/images/logos/fiu-eng-logo.png"/></a></div>
+              <div class="col-xs-4 text-right"><a href="https://cis.fiu.edu" target="_blank"><img src="/images/logos/fiu-kfscis-logo.png"/></a></div>
+          </div>
+
+          <div class="row">
+
+              <p style="text-align: center;padding-top: 20px">Updated on September 16, 2025</p>
+          </div>
+
+      </footer>
+    </div>
+
+  </body>
+</html>

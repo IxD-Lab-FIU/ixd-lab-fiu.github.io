@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>IXD Lab – Interactive Experience Design Lab @Florida International University</title>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Interactive Experience Design Lab @Florida International University">
+    <meta property="og:description" content="Interactive Experience Design Lab @Florida International University"/>
+
+    <meta name="author" content="IXD Lab" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="Smash Lab - Smart Sensing for Humans Lab at Carnegie Mellon University" href="/feed.xml" />
+
+    <script>
+
+        $(document).ready(function(){
+
+          $('.bxslider').bxSlider({
+            adaptiveHeight: false,
+            speed: 500,
+            captions: true,
+            auto: true,
+            pause: 5000,
+            autoControls: true
+            });
+        });
+
+      function fixNavbar() {
+        if ($(this).scrollTop() > 87 && $(window).width() >= 768) {
+          $("body").addClass("fix-nav");
+          $(".navbar").addClass("navbar-fixed-top");
+          $(".navbar").removeClass("navbar-static-top");
+          $("#logo").attr("src","/images/logos/lab-logo-small.png");
+
+        } else {
+          $("body").removeClass("fix-nav");
+          $(".navbar").addClass("navbar-static-top");
+          $(".navbar").removeClass("navbar-fixed-top");
+          $("#logo").attr("src","/images/logos/lab-logo.png");
+        }
+      }
+      $(window).on('resize orientationChange', function(event) {
+        fixNavbar();
+      });
+      $(window).scroll(function(e){
+        fixNavbar()
+      });
+    </script>
+
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img id="logo" src="/images/logos/lab-logo.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../">HOME</a></li>
+              <li><a href="/members">TEAM</a></li>
+              <li><a href="/publications">PUBLICATIONS</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div id="main" role="main" class="container">
+          <article class="page">
+
+              <h1></h1>
+
+              <div class="entry">
+
+              <h1>Faculty</h1>
+
+              <div class="row">
+
+                <div class="member-badge col-md-3 col-sm-3 col-xs-4">
+                  <div class="image"><a href="https://chen-chen.me"><img src="https://chen-chen.me/assets/img/profile.jpg" style="border-radius: 15px"
+                                                                         onmouseover="this.src='https://chen-chen.me/assets/img/profile-ai.jpg';"
+                                                                         onmouseout="this.src='https://chen-chen.me/assets/img/profile.jpg';"/></a></div>
+                </div>
+
+                <div class="member-badge col-md-9 col-sm-9 col-xs-8">
+                  <div class="details">
+                    <div class="name"><a href="http://chen-chen.me", target="_blank">Chen Chen, Ph.D.</a></div>
+                    <div class="affiliation" style="font-size: 11pt;text-align: justify;">
+                      Chen Chen is an Assistant Professor in the Knight Foundation School of Computing and Information Sciences.
+
+                      His research interests are in the areas of Human-Computer Interaction, eXtended Reality, and Creativity Support Tools.
+
+                      He received his Ph.D. in Computer Science from the University of California San Diego, M.S. in Electrical and Computer Engineering from Carnegie Mellon University, and B.Eng. in Electrical and Electronic Engineering from the University of Nottingham, United Kingdom.
+                  </div>
+
+                  <div class="email" style="padding-top: 11px;font-size: 11pt">
+                    Email: <span><a href="mailto:chechen@fiu.edu">chechen@fiu.edu</a></span>
+                    <br/>
+                    Website: <span><a href="https://chen-chen.me" target="_blank">https://chen-chen.me</a></span>
+                    <br/>
+                    FIU Discovery: <span><a href="https://discovery.fiu.edu/display/person-chen-chen" target="_blank">https://discovery.fiu.edu/display/person-chen-chen</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h1>Current Students</h1>
+            <div class="row">
+
+              <div class="member-badge col-lg-3 col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/nishanth-chidambaram.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Nishanth Chidambaram</a></div>
+                    <div class="degree">MS Research Assistant</div>
+                    <div class="affiliation">Computer Science, UC San Diego</div>
+                    <div class="email"><span><a href="mailto:nchidambaram@ucsd.edu">nchidambaram@ucsd.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-lg-3 col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/zion-michael.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Zion Michael</a></div>
+                    <div class="degree">Undergrad Research Assistant</div>
+                    <div class="affiliation">Mechanical Engineering</div>
+                    <div class="email"><span><a href="mailto:zmich006@fiu.edu">zmich006@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-lg-3 col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/gabriela-marquez.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Gabriela Marquez</a></div>
+                    <div class="degree">Undergrad Research Assistant</div>
+                    <div class="affiliation">Computer Science</div>
+                    <div class="email"><span><a href="mailto:gmarq024@fiu.edu">gmarq024@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <h1>Capstone Project Students</h1>
+            <div class="row">
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/placeholder.png" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Peace Passos</a></div>
+                    <div class="degree">Undergraduate</div>
+                    <div class="affiliation">Computer Science</div>
+                    <div class="email"><span><a href="mailto:ppass004@fiu.edu">ppass004@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/placeholder.png" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Keren Rivera</a></div>
+                    <div class="degree">Undergraduate</div>
+                    <div class="affiliation">Computer Science</div>
+                    <div class="email"><span><a href="mailto:krive138@fiu.edu">krive138@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/sabrina-alvarado.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Sabrina Alvarado</a></div>
+                    <div class="degree">Undergraduate</div>
+                    <div class="affiliation">Computer Science</div>
+                    <div class="email"><span><a href="mailto:salva195@fiu.edu">salva195@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/jonathan-martinez.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Jonathan Martinez</a></div>
+                    <div class="degree">Undergraduate</div>
+                    <div class="affiliation">Mechanical Engineering</div>
+                    <div class="email"><span><a href="mailto:jmart1062@fiu.edu">jmart1062@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/placeholder.png" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Ana Morales</a></div>
+                    <div class="degree">Undergraduate</div>
+                    <div class="affiliation">Computer Science</div>
+                    <div class="email"><span><a href="mailto:amora487@fiu.edu">amora487@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+            </div>
+
+            <h1>Collaborators</h1>
+            <div class="row">
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/nadir-weibel.jpg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Nadir Weibel, Ph.D.</a></div>
+                    <div class="degree">Professor</div>
+                    <div class="affiliation">Computer Science, UC San Diego</div>
+                    <div class="email"><span><a href="mailto:weibel@ucsd.edu">weibel@ucsd.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/susan-jacobson.jpg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Susan Jacobson, Ph.D.</a></div>
+                    <div class="degree">Associate Professor</div>
+                    <div class="affiliation">Journalism & Media</div>
+                    <div class="email"><span><a href="mailto:sujacobs@fiu.edu">sujacobs@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/gabriel-ramirez.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Gabriel Ramirez, M.F.A.</a></div>
+                    <div class="degree">Assistant Teaching Professor</div>
+                    <div class="affiliation">Journalism & Media</div>
+                    <div class="email"><span><a href="mailto:garamire@fiu.edu">garamire@fiu.edu</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/cuong-nguyen.png" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Cuong Nguyen, Ph.D.</a></div>
+                    <div class="degree">Senior Research Scientist</div>
+                    <div class="affiliation">Adobe Research</div>
+                    <div class="email"><span><a href="mailto:cunguyen@adobe.com">cunguyen@adobe.com</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/ding-li.jpg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Dingzeyu Li, Ph.D.</a></div>
+                    <div class="degree">Senior Research Scientist</div>
+                    <div class="affiliation">Adobe Research</div>
+                    <div class="email"><span><a href="mailto:dinli@adobe.com">dinli@adobe.com</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/alexa-sui.jpeg" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Alexa F. Sui, Ph.D.</a></div>
+                    <div class="degree">Research Scientist</div>
+                    <div class="affiliation">Adobe Research</div>
+                    <div class="email"><span><a href="mailto:asiu@adobe.com">asiu@adobe.com</a></span> </div>
+                </div>
+              </div>
+
+              <div class="member-badge col-md-2 col-sm-3 col-xs-4">
+                <div class="image"><a href="#"><img src="../images/members/nic-marquardt.png" style="border-radius: 15px"/></a></div>
+                <div class="details">
+                    <div class="name"><a href="#">Nic Marquardt, Ph.D.</a></div>
+                    <div class="degree">Principal Research Scientist</div>
+                    <div class="affiliation">Microsoft Research</div>
+                    <div class="email"><span><a href="mailto:nicmarquardt@microsoft.com">nicmarquardt@microsoft.com</a></span> </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+      </article>
+
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper-footer container">
+      <footer class="footer">
+        <div class="row">
+          <div class="col-xs-4 text-left"><a href="http://fiu.edu" target="_blank"><img src="/images/logos/fiu-logo.png"/></a></div>
+          <div class="col-xs-4 text-center"><a href="https://cec.fiu.edu" target="_blank"><img src="/images/logos/fiu-eng-logo.png"/></a></div>
+          <div class="col-xs-4 text-right"><a href="http://cis.fiu.edu" target="_blank"><img src="/images/logos/fiu-kfscis-logo.png"/></a></div>
+        </div>
+
+        <div class="row">
+
+              <p style="text-align: center;padding-top: 20px">Updated on September 16, 2025</p>
+          </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
