@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IXD Lab – Interactive Experience Design Lab @Florida International University</title>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Interactive Experience Design Lab @Florida International University">
+    <meta property="og:description" content="Interactive Experience Design Lab @Florida International University"/>
+
+    <meta name="author" content="IXD Lab" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="Smash Lab - Smart Sensing for Humans Lab at Carnegie Mellon University" href="/feed.xml" />
+
+    <script>
+
+        $(document).ready(function(){
+
+          $('.bxslider').bxSlider({
+            adaptiveHeight: false,
+            speed: 500,
+            captions: true,
+            auto: true,
+            pause: 5000,
+            autoControls: true
+            });
+        });
+
+      function fixNavbar() {
+        if ($(this).scrollTop() > 87 && $(window).width() >= 768) {
+          $("body").addClass("fix-nav");
+          $(".navbar").addClass("navbar-fixed-top");
+          $(".navbar").removeClass("navbar-static-top");
+          $("#logo").attr("src","/images/logos/lab-logo-small.png");
+
+        } else {
+          $("body").removeClass("fix-nav");
+          $(".navbar").addClass("navbar-static-top");
+          $(".navbar").removeClass("navbar-fixed-top");
+          $("#logo").attr("src","/images/logos/lab-logo.png");
+        }
+      }
+      $(window).on('resize orientationChange', function(event) {
+        fixNavbar();
+      });
+      $(window).scroll(function(e){
+        fixNavbar()
+      });
+    </script>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img id="logo" src="/images/logos/lab-logo.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="team.html">TEAM</a></li>
+              <li><a href="publication.html">PUBLICATIONS</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <div id="main" role="main" class="container">
+          <article class="page">
+
+              <h2 id="2025-ref" style="padding-top: 15px">Frequent Asked Questions</h2>
+
+              <hr/>
+
+                <h3 style="font-weight: bold;">Can I join the lab as PhD student?</h3>
+                
+                <p align="justify">
+                Yes, we are taking new students! 
+                
+                You should apply to the graduate program at KFSCIS at FIU.
+                
+                In general, we look for students interested in Human-Computer Interaction research. 
+                
+                Since the Ph.D. application process at FIU is highly competitive, we encourage you to reach out and discuss your application beforehand. 
+                
+                Reaching out to us and working with us is always a great way to initiate collaborations - if you are interested in our research, we will most likely be working in the same research field, and the chance is good that and we will be your future collaborators, colleagues, thesis committee members, or recommendation letter writers. 
+                
+                So we would love to know about you!
+
+                For more details, please also refer to <a href="https://chen-chen.me/phd.html" target="_blank">this page</a>.
+
+                </p>
+                <h3 style="font-weight: bold;">Other opportunities to work with the team?</h3>
+                
+                <p align="justify">
+
+                Working with students is always exciting to us and we are constantly looking for students who show strong self motivation and can be persistent during up-and-downs when tackling research problems.
+                
+                If you are a current undergraduate or master's student at FIU and are interested in HCI research, please fill out <a href="https://forms.office.com/r/BvYqByBVag" target="_blank">this form</a>.
+
+                If you are currently not a FIU student, please <a href="mailto:chechen@fiu.edu">email Chen</a> alongside your CV.
+
+                </p>
+
+                <h3 style="font-weight: bold;">Can we meet?</h3>
+
+                <p align="justify">
+
+                Sure! Though we enjoy meeting new students, our time could be limited and should be primarily focused on conducting research. 
+                
+                If you want to schedule a meeting with a team member, please first send an email with your name, the purpose of the meeting, and other information you want to share. 
+                
+                Lab members could have tight schedules so please excuse us if your email is not responded timely.
+
+                </p>
+
+                <h3 style="font-weight: bold;">What is the lab culture?</h3>
+                
+                <p align="justify">
+
+                Be nice, be kind, and be collaborative. 
+                
+                That's what we expect all lab members to be. 
+                
+                A great exemplar set of lab values around Ethics, Diversity, and Community can be found on <a href="https://make4all.org/working-in-our-group/values/" target="_blank">Jennifer Mankoff's Make4all lab webpage</a>. 
+                
+                We also practice the <a href="https://www.cs.cmu.edu/~weigand/staff/" target="_blank">reasonable person principle</a>.   
+
+                </p>
+
+                <h3 style="font-weight: bold;">Where are you located?</h3>
+
+                <p align="justify">
+
+                Our office is located in <a href="https://maps.app.goo.gl/WYiCGyYjqqL128Vo7" target="_blank">CASE</a> 212 on the Modesto A. Maidique Campus (MMC) of Florida International University.
+
+                The nearest parking is available at <a href="https://maps.app.goo.gl/RJdDbXQhxTYUsH6s6" target="_blank">PG6</a>.
+                
+                </p>
+
+      </article>
+
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper-footer container">
+      <footer class="footer">
+        <div class="row">
+          <div class="col-xs-4 text-left"><a href="http://fiu.edu" target="_blank"><img src="/images/logos/fiu-logo.png"/></a></div>
+          <div class="col-xs-4 text-center"><a href="https://cec.fiu.edu" target="_blank"><img src="/images/logos/fiu-eng-logo.png"/></a></div>
+          <div class="col-xs-4 text-right"><a href="http://cis.fiu.edu" target="_blank"><img src="/images/logos/fiu-kfscis-logo.png"/></a></div>
+        </div>
+
+        <div class="row">
+              <p style="text-align: center;padding-top: 20px">Updated on September 16, 2025</p>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>
